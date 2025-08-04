@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Lake Saaka Resort</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="rooms.html">Accommodation</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="#">Dining</a>
+            <a href="#">Experiences</a>
+            <a href="#">Gallery</a>
+            <a href="#">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+                    <p>123 Lakeside Drive, Fort Portal</p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fas fa-phone"></i> Lets Talk</h3>
+                    <p>+256 123 456 789</p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fas fa-envelope"></i> General Support</h3>
+                    <p>reservations@lakesaaka.com</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Send Us A Message</h2>
+                <form action="https://formsubmit.co/masendiaaron6@gmail.com" method="POST">
+                                        <input type="hidden" name="_next" value="http://localhost:8000/html/thankyou.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <div class="form-group">
+                        <label for="first-name">TELL US YOUR NAME *</label>
+                        <div class="form-group-row">
+                            <div class="form-group-nested">
+                                <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+                            </div>
+                            <div class="form-group-nested">
+                                <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">ENTER YOUR EMAIL *</label>
+                        <input type="email" id="email" name="email" placeholder="Eg. example@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">ENTER PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Eg. +256 700 000000">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">MESSAGE *</label>
+                        <textarea id="message" name="message" placeholder="Write us a message" required></textarea>
+                    </div>
+                    <button type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Lake Saaka Resort</h3>
+                <p>Experience tranquility and luxury by the lake, where nature's beauty meets modern comfort.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Activities</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Lakeside Drive, Fort Portal</p>
+                <p><i class="fas fa-phone"></i> +256 123 456 789</p>
+                <p><i class="fas fa-envelope"></i> reservations@lakesaaka.com</p>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Lake Saaka Resort | All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
