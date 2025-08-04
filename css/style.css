@@ -73,15 +73,34 @@ nav {
 .hamburger.toggle div:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+/* Media query for responsive navigation */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
 
-#hero {
-    background-image: url('https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
-    color: white;
-    padding: 4rem 1rem;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #3D405B;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin: 1rem 0;
+    }
 }
+
+
 
 footer {
     background-color: #3D405B;
@@ -99,12 +118,12 @@ footer {
 .footer-section {
     flex: 1;
     min-width: 250px;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 .footer-section h3 {
     color: #E07A5F;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .footer-section p, .footer-section ul {
@@ -138,7 +157,7 @@ footer {
 
 .footer-bottom {
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     border-top: 1px solid #E07A5F;
 }
 
@@ -151,7 +170,7 @@ footer {
 
     .footer-section {
         min-width: 100%;
-        margin-bottom: 2rem;
+        margin-bottom: 0.5rem;
     }
 
     .footer-section.social a {
@@ -159,28 +178,3 @@ footer {
     }
 }
 
-/* Media query for responsive navigation */
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #3D405B;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links a {
-        margin: 1rem 0;
-    }
-}
